@@ -1,3 +1,5 @@
+### Team Week Repo Practice
+
 Install Git Graph extension in VSCode. It’s a very handy tool that shows the history of your repo.
 
 Use VScode as your terminal text editor: Git will likely open vim or nano as your default text editor in your terminal. To change that, run this command:
