@@ -7,7 +7,7 @@ Use VScode as your terminal text editor: Git will likely open vim or nano as you
 git config --global core.editor "code --wait" 
 ```
 
-Summarized Workflow
+### Summarized Workflow
 
 git fetch in main
 Move to new feature branch
@@ -17,9 +17,9 @@ Squash your commits
 Rebase from main if haven’t already
 Push your feature branch and make a Pull Request to main
 
-Detailed Workflow
+### Detailed Workflow
 
-git fetch
+**git fetch**
 
 git fetch is checking if there are changes from your remote repo without actually bringing a copy of those changes down to your project. Unlike git pull, which is shorthand for git fetch followed by git merge.
 
@@ -29,7 +29,7 @@ In main:
 git fetch              
 ```
 
-git rebase
+**git rebase**
 
 Checkout a new feature branch or an already existing branch. Since using git fetch, you can checkout an already existing branch in the remote repo even if you haven’t pulled it yet.
 
@@ -59,7 +59,7 @@ If you used VSCode as your text editor, follow the instructions presented, save 
 At this point, rebase from main if you haven’t already. Since you squashed your commits, you should have fewer merge conflicts to work through. VSCode offers merge conflict tools in the code itself. There is a Source Control panel (three connected dots) in the far left column that lists all merge conflicts.
 
 
-git push
+**git push**
 
 When you’re done with your feature branch and ready to add it to main, push your feature branch to the repo and create a pull request. If you have previously pushed your code to a remote branch, you need to force a push
 
