@@ -1,10 +1,11 @@
+### Team Week Repo Practice
+
 Install Git Graph extension in VSCode. It’s a very handy tool that shows the history of your repo.
 
-
-Use VScode as your terminal text editor: Git will likely open vim or nano as your default text editor in your terminal. To change that, run this command: 
+Use VScode as your terminal text editor: Git will likely open vim or nano as your default text editor in your terminal. To change that, run this command:
 
 ```
-git config --global core.editor "code --wait" 
+git config --global core.editor "code --wait"
 ```
 
 ### Summarized Workflow
@@ -26,21 +27,21 @@ git fetch is checking if there are changes from your remote repo without actuall
 In main:
 
 ```
-git fetch              
+git fetch
 ```
 
 **git rebase**
 
 Checkout a new feature branch or an already existing branch. Since using git fetch, you can checkout an already existing branch in the remote repo even if you haven’t pulled it yet.
 
-Once in the feature branch, you have two options: 
+Once in the feature branch, you have two options:
 
-
-Rebase from main to get any new updates. Generally do this when you’re done with your feature branch, ready to add your code to main, but need to check if main has gotten any new updates in the meantime. 
+Rebase from main to get any new updates. Generally do this when you’re done with your feature branch, ready to add your code to main, but need to check if main has gotten any new updates in the meantime.
 
 ```
 git rebase main
 ```
+
 OR
 
 Continue to work and commit in your feature branch. You may want to rebase before continuing to work if it’s been awhile and you should consider the new changes to the code. As you work, generally one commit per file so commits can be more easily referenced for changes. Make as many commits as you need though.
@@ -50,14 +51,12 @@ Squash your commit history to reduce the number the commits and clean up the his
 ```
 git rebase -i [SHA]
 ```
+
 [SHA]= the commit id number
 Note: You can’t select the first commit.
 If you used VSCode as your text editor, follow the instructions presented, save and close the file when done
 
-
-
 At this point, rebase from main if you haven’t already. Since you squashed your commits, you should have fewer merge conflicts to work through. VSCode offers merge conflict tools in the code itself. There is a Source Control panel (three connected dots) in the far left column that lists all merge conflicts.
-
 
 **git push**
 
@@ -69,8 +68,7 @@ git push origin branchname --force
 
 This is because the remote commit history and the local commit history will be different after using squash.
 
------------------------
-
+---
 
 Hey all,
 
